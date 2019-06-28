@@ -2,7 +2,7 @@
 
 这是一个用来展示如何在一个使用 Rust 开发的应用上面使用 VC-LTL 的例子
 
-注：该项目使用 cargo 建立
+注：该项目使用 cargo 建立且 VC-LTL helper for nmake.cmd 是从 VC-LTL 复制而来
 
 ## 编译环境需求
 - MSVC 工具集版本的 Rust 编译器

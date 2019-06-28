@@ -13,11 +13,8 @@ popd
 rem Load the Microsoft Visual C++ 2017 build environment
 call "%VisualStudioInstallDir%\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
 
-rem Find the VC-LTL from the registry
-for /f "tokens=1,2*" %%i in ('reg query "HKCU\Code\VC-LTL" /v Root ') do set VC_LTL_Root=%%k
-
 rem Load the VC-LTL configuration
-call "%VC_LTL_Root%\config\config.cmd"
+call "%~dp0\VC-LTL helper for nmake.cmd"
 
 rem We use static CRT because we don't want to depend on VC-LTL CRT redistribute
 set RUSTFLAGS=--codegen target-feature=+crt-static
