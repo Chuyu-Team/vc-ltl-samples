@@ -4,7 +4,7 @@
 
 int main()
 {
-    // I can't use that because of the limitation or bug in VC-LTL.
+    // I can't use that because of the limitation in VC-LTL.
     // std::setlocale(LC_ALL, "zh_CN.UTF-8");
 
     std::setlocale(LC_ALL, "chs");
